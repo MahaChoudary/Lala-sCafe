@@ -2,7 +2,7 @@ import { Music2, Coffee, Sparkles, PartyPopper } from 'lucide-react';
 
 const creativeMoments = [
   {
-    title: 'Midnight Qawwali Nights',
+    title: 'Midnight Live Qawwali Nights',
     description: 'Live Qawwali performances fill the cafe with soul, rhythm, and warmth — paired with late-night bites and a glowing, cozy ambience.',
     tag: 'FRIDAYS • 10 PM',
     icon: Music2,
