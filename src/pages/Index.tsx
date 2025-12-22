@@ -9,6 +9,7 @@ import Events from '@/components/Events';
 import Testimonials from '@/components/Testimonials';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
+import BackToTopButton from '@/components/BackToTopButton';
 
 const Index = () => {
   return (
@@ -35,6 +36,7 @@ const Index = () => {
           <Contact />
         </main>
         <Footer />
+        <BackToTopButton />
       </div>
     </>
   );

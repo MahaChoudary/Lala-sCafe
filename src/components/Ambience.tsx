@@ -44,22 +44,8 @@ const Ambience = () => {
               ))}
             </div>
 
-            <div className="flex items-center gap-4">
-              <div className="flex -space-x-3">
-                {[1, 2, 3, 4].map((i) => (
-                  <div
-                    key={i}
-                    className="w-10 h-10 rounded-full bg-primary/20 border-2 border-card flex items-center justify-center"
-                  >
-                    <span className="text-xs text-primary font-semibold">
-                      {String.fromCharCode(64 + i)}
-                    </span>
-                  </div>
-                ))}
-              </div>
-              <p className="font-body text-sm text-muted-foreground">
-                <span className="text-foreground font-semibold">500+</span> happy customers
-              </p>
+            <div className="rounded-2xl border border-white/20 bg-card/40 px-6 py-5 font-heading text-sm uppercase tracking-[0.35em] text-muted-foreground w-max">
+          
             </div>
           </div>
 
@@ -73,19 +59,6 @@ const Ambience = () => {
                 className="w-full h-[400px] lg:h-[500px] object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-lalas-black/40 to-transparent" />
-            </div>
-            
-            {/* Floating Card */}
-            <div className="absolute -bottom-6 -left-6 bg-card p-6 rounded-2xl shadow-card border border-border">
-              <div className="flex items-center gap-4">
-                <div className="w-14 h-14 rounded-full bg-primary flex items-center justify-center">
-                  <Coffee className="w-7 h-7 text-primary-foreground" />
-                </div>
-                <div>
-                  <p className="font-heading text-2xl font-bold text-foreground">4.9</p>
-                  <p className="font-body text-sm text-muted-foreground">Customer Rating</p>
-                </div>
-              </div>
             </div>
           </div>
         </div>
