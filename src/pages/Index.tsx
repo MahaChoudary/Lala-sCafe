@@ -23,7 +23,7 @@ const Index = () => {
         <meta name="keywords" content="LaLa's Café, fast food, burgers, wraps, fries, Qawwali nights, café, restaurant, Pakistan" />
       </Helmet>
 
-      <div className="min-h-screen">
+      <div className="min-h-screen w-full overflow-x-hidden">
         <Navbar />
         <main>
           <Hero />

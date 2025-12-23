@@ -34,7 +34,7 @@ const Navbar = () => {
           : 'bg-transparent py-4'
       }`}
     >
-      <div className="container mx-auto px-4 flex items-center justify-between">
+      <div className="w-full px-4 sm:px-6 lg:px-12 flex items-center justify-between">
         {/* Logo */}
         <a href="#home" className="flex items-center gap-3 group">
           <img
@@ -90,7 +90,8 @@ const Navbar = () => {
           isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
         }`}
       >
-        <div className="container mx-auto px-4 py-4 flex flex-col gap-4">
+       <div className="w-full px-4 sm:px-6 py-4 flex flex-col gap-4">
+
           {navLinks.map((link) => (
             <a
               key={link.name}
