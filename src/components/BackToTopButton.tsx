@@ -6,7 +6,7 @@ const BackToTopButton = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsVisible(window.scrollY > 400);
+      setIsVisible(window.scrollY > 200);
     };
 
     handleScroll();
@@ -17,10 +17,6 @@ const BackToTopButton = () => {
     };
   }, []);
 
-  if (!isVisible) {
-    return null;
-  }
-
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
@@ -29,7 +25,9 @@ const BackToTopButton = () => {
     <button
       type="button"
       onClick={scrollToTop}
-      className="fixed bottom-6 right-6 z-50 flex h-12 w-12 items-center justify-center rounded-full bg-primary text-primary-foreground shadow-glow transition hover:scale-105 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/50"
+      className={`fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-[999] flex h-11 w-11 sm:h-12 sm:w-12 items-center justify-center rounded-full bg-primary text-primary-foreground shadow-glow shadow-card transition hover:scale-105 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/50 ${
+        isVisible ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
+      }`}
       aria-label="Back to top"
     >
       <ArrowUp className="h-5 w-5" />
